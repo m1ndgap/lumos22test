@@ -1,0 +1,148 @@
+html {
+  font-size: 62.5%; }
+  html * {
+    box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Lato", sans-serif; }
+
+.btn-custom {
+  padding: 15px 30px 17px;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: initial;
+  font-style: normal;
+  color: #FFFFFF;
+  line-height: 1.8rem;
+  letter-spacing: -0.3px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #DB0707;
+  border-color: #DB0707;
+  border-radius: 35px;
+  transition: background-color 350ms; }
+  .btn-custom:hover, .btn-custom:focus {
+    background-color: #f93636;
+    border-color: #DB0707; }
+  .btn-custom:not(:disabled):not(.disabled):active {
+    background-color: #fa6767;
+    border-color: #DB0707; }
+
+.input-custom {
+  padding: 15px 40px 15px 23px;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+  font-weight: initial;
+  font-style: normal;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1.8rem;
+  border-radius: 35px; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Lato-LightItalic.woff2") format("woff2"), url("../fonts/Lato-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic; }
+
+.landing {
+  background-image: url("../img/landing-bg-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 0 135px; }
+  @media (min-width: 768px) {
+    .landing {
+      background-image: url("../img/landing-bg.jpg"); } }
+  .landing__logo {
+    width: 63px;
+    height: 67px;
+    background-image: url("../img/lumos-logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; }
+  .landing__main-title {
+    font-family: "Lato", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #FFFFFF;
+    margin-top: 32px;
+    text-transform: uppercase; }
+    @media (min-width: 1200px) {
+      .landing__main-title {
+        padding: 0;
+        margin-top: 38px; } }
+  .landing__date {
+    font-family: "Lato", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-style: normal;
+    color: #FFFFFF;
+    margin-top: 14px; }
+  .landing__subtitle {
+    font-family: "Lato", sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+    font-style: normal;
+    color: #DDA859;
+    margin-top: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+    @media (min-width: 1200px) {
+      .landing__subtitle {
+        font-size: 6rem;
+        margin-top: 47px; } }
+  .landing__text {
+    font-family: "Lato", sans-serif;
+    font-size: 2.4rem;
+    font-weight: initial;
+    font-style: normal;
+    color: #FFFFFF;
+    line-height: 29px;
+    margin-top: 8px;
+    letter-spacing: 0.3px; }
+  .landing__form {
+    padding: 0 10px;
+    margin-top: 20px; }
+    @media (min-width: 1200px) {
+      .landing__form {
+        margin-top: 27px; } }
+    .landing__form .form-group {
+      padding: 0; }
+      @media (min-width: 1200px) {
+        .landing__form .form-group {
+          margin: 0; } }
+    .landing__form .btn-custom, .landing__form .form-group {
+      flex-grow: 1; }
+  .landing__form-disclaimer {
+    margin-top: 13px;
+    font-family: "Lato", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-style: normal;
+    color: #FFFFFF;
+    font-style: italic; }
+
+/*# sourceMappingURL=style.css.map */

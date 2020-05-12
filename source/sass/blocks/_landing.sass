@@ -1,0 +1,64 @@
+.landing
+  background-image: url('../img/landing-bg-mobile.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  padding: 40px 0 135px
+  @include media-breakpoint-up(md)
+    background-image: url('../img/landing-bg.jpg')
+
+  &__logo
+    width: 63px
+    height: 67px
+    background-image: url('../img/lumos-logo.png')
+    background-repeat: no-repeat
+    background-size: contain
+    background-position: center
+
+  &__main-title
+    @include text(1.8rem, 500, $white)
+    margin-top: 32px
+    text-transform: uppercase
+    @include media-breakpoint-up(xl)
+      padding: 0
+      margin-top: 38px
+
+  &__date
+    @include text(1.8rem, 500, $white)
+    margin-top: 14px
+
+  &__subtitle
+    @include text(4rem, 600, $main-color)
+    margin-top: 40px
+    letter-spacing: 1px
+    text-transform: uppercase
+    @include media-breakpoint-up(xl)
+      font-size: 6rem
+      margin-top: 47px
+
+
+  &__text
+    @include text(2.4rem, initial, $white)
+    line-height: 29px
+    margin-top: 8px
+    letter-spacing: 0.3px
+
+  &__form
+    padding: 0 10px
+    margin-top: 20px
+    @include media-breakpoint-up(xl)
+      margin-top: 27px
+    .form-group
+      padding: 0
+      @include media-breakpoint-up(xl)
+        margin: 0
+    .btn-custom, .form-group
+      flex-grow: 1
+
+  &__form-disclaimer
+    margin-top: 13px
+    @include text(1.1rem, 300, $white)
+    font-style: italic
+
+
+

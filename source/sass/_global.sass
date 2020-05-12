@@ -1,0 +1,36 @@
+html
+  font-size: 62.5%
+  *
+    box-sizing: border-box
+
+body
+  @include resetmargin()
+  position: relative
+  font-family: "Lato", sans-serif
+
+.btn-custom
+  padding: 15px 30px 17px
+  width: 100%
+  @include text(1.5rem, initial, $white)
+  line-height: 1.8rem
+  letter-spacing: -0.3px
+  text-align: center
+  text-transform: uppercase
+  background-color: $ui
+  border-color: $ui
+  border-radius: 35px
+  transition: background-color $transition
+  &:hover, &:focus
+    background-color: lighten($ui, 15%)
+    border-color: $ui
+  &:not(:disabled):not(.disabled):active
+    background-color: lighten($ui, 25%)
+    border-color: $ui
+
+.input-custom
+  padding: 15px 40px 15px 23px
+  @include text(1.5rem, initial, $black)
+  text-transform: uppercase
+  line-height: 1.8rem
+  border-radius: 35px
+
