@@ -1,0 +1,69 @@
+.description
+  margin-top: 70px
+
+  &__title
+    margin-bottom: 50px
+
+  &__content
+    margin-bottom: 104px
+
+  &__content + &__content
+    margin-bottom: 50px
+    @include media-breakpoint-up(xl)
+      margin-bottom: -1rem
+
+  &__text
+    letter-spacing: -0.5px
+
+  &__text + &__text
+    margin-top: 40px
+
+  &__arrow-text
+    position: relative
+    padding: unset
+
+    &:after
+      content: ""
+      position: absolute
+      left: -13px
+      top: 50%
+      transform: translateY(-50%)
+      display: none
+      border-top: 57px solid transparent
+      border-bottom: 57px solid transparent
+      border-right: 15px solid $main-color
+    &--left
+      padding: unset
+      &:after
+        content: ""
+        position: absolute
+        left: unset
+        right: -23px
+        top: 50%
+        transform: translateY(-50%)
+        border-top: 57px solid transparent
+        border-bottom: 57px solid transparent
+        border-left: 15px solid $main-color
+        border-right: unset
+    @include media-breakpoint-up(xl)
+      padding-left: 16px
+      &:after
+        display: block
+      &--left
+        padding-right: 16px
+
+  &__img-wrap
+    overflow: hidden
+    img
+      width: 100%
+      display: block
+      margin: 0 auto
+    &--decorated
+      img
+        border-bottom: 1px solid $main-color
+    &--decorated-sm
+      img
+        border-bottom: 1px solid $main-color
+        @include media-breakpoint-up(md)
+          border-bottom: none
+

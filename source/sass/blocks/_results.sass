@@ -1,0 +1,79 @@
+.results
+  padding-top: 102px
+  padding-bottom: 125px
+  background-color: $bg-2
+
+  &__wrapper
+    background-color: $white
+    margin-top: 45px
+    margin-bottom: 60px
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15)
+    @include media-breakpoint-up(lg)
+      padding-left: 0
+      padding-right: 0
+    &::before
+      content: ""
+      display: block
+      position: absolute
+      top: -11px
+      right: 31px
+      width: 40px
+      height: 40px
+      background-image: url('../img/icon-quotes.jpg')
+      background-repeat: no-repeat
+      background-size: cover
+
+
+  &__header
+    position: relative
+    padding: 25px 10px 20px
+    display: flex
+    flex-flow: column nowrap
+    &::after
+      content: ""
+      display: block
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 261px
+      height: 1px
+      background-color: $results
+    @include media-breakpoint-up(md)
+      flex-flow: row nowrap
+      padding: 25px 20px 30px
+
+
+  &__header-text
+    margin-top: 15px
+    display: flex
+    flex-flow: column nowrap
+    justify-content: flex-start
+    @include media-breakpoint-up(md)
+      margin-left: 20px
+
+  &__avatar
+    margin: 0
+
+  &__name
+    @include text(1.4rem, 600, $black)
+    margin-top: 5px
+
+  &__subtitle
+    margin-top: 11px
+    @include text(1.4rem, 600, $black)
+    font-style: italic
+    text-transform: uppercase
+
+  &__text-wrap
+    padding: 10px
+    @include media-breakpoint-up(md)
+      padding: 30px
+    p
+      @include text(1.6rem, initial, $black)
+      line-height: 1.9rem
+    p + p
+      margin-top: 19.4px
+    span
+      font-weight: 600
+      color: $results
+

@@ -1,0 +1,61 @@
+.footer
+  padding-top: 30px
+  padding-bottom: 37px
+  background-image: url('../img/footer-bg.jpg')
+  background-position: bottom
+  background-repeat: no-repeat
+  background-size: cover
+
+  .container
+    @include media-breakpoint-up(lg)
+      padding-left: 0
+      padding-right: 0
+
+  &__title
+    @include text(1.8rem, initial, $white)
+    text-transform: uppercase
+    letter-spacing: 0.8px
+
+  &__email
+    margin-top: 3px
+    @include text(1.8rem, initial, $white)
+    display: inline-block
+    &:after
+      content: ""
+      position: relative
+      top: -3px
+      display: block
+      height: 1px
+      width: 100%
+      background-color: $white
+      transition: top $transition
+    &:hover, &:active
+      color: $white
+      text-decoration: none
+      &:after
+        top: -1px
+
+  &__btn
+    display: block
+    width: auto
+    margin-top: 34px
+    margin-bottom: 40px
+    padding: 14px 9px 16px
+    font-size: 1.4rem
+    border-radius: 10px
+    background-color: $footer-btn
+    letter-spacing: 0.2px
+    @include media-breakpoint-up(md)
+      margin-right: 21px
+      margin-bottom: 0
+
+  &__partners-text
+    margin-top: 28px
+    @include media-breakpoint-up(md)
+      margin-top: 58px
+    span
+      display: block
+      @include text(1.4rem, initial, $footer-partners)
+    span + span
+      margin-top: 5px
+
