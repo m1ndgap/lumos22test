@@ -172,12 +172,17 @@ body {
         margin-top: 27px; } }
     .landing__form .form-group {
       padding: 0; }
+      .landing__form .form-group label {
+        display: none; }
       @media (min-width: 1200px) {
         .landing__form .form-group {
           margin: 0; } }
     .landing__form .btn-custom, .landing__form .form-group {
       font-size: 1.2rem;
       flex-grow: 1; }
+      @media (min-width: 768px) {
+        .landing__form .btn-custom, .landing__form .form-group {
+          font-size: 1.5rem; } }
   .landing__form-disclaimer {
     margin-top: 13px;
     font-family: "Lato", sans-serif;

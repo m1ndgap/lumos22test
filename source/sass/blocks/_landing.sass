@@ -53,11 +53,15 @@
       margin-top: 27px
     .form-group
       padding: 0
+      label
+        display: none
       @include media-breakpoint-up(xl)
         margin: 0
     .btn-custom, .form-group
       font-size: 1.2rem
       flex-grow: 1
+      @include media-breakpoint-up(md)
+        font-size: 1.5rem
 
   &__form-disclaimer
     margin-top: 13px
