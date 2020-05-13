@@ -29,7 +29,7 @@ body {
   @media (min-width: 768px) {
     .btn-custom {
       padding: 15px 30px 17px;
-      font-size: 1.5; } }
+      font-size: 1.5rem; } }
   .btn-custom:hover, .btn-custom:focus {
     background-color: #f93636;
     border-color: #DB0707;
@@ -45,13 +45,16 @@ body {
 .input-custom {
   padding: 15px 40px 15px 23px;
   font-family: "Lato", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: initial;
   font-style: normal;
   color: #000000;
   text-transform: uppercase;
   line-height: 1.8rem;
   border-radius: 35px; }
+  @media (min-width: 768px) {
+    .input-custom {
+      font-size: 1.5rem; } }
 
 .common-title {
   font-family: "Lato", sans-serif;
@@ -122,14 +125,16 @@ body {
     background-position: center; }
   .landing__main-title {
     font-family: "Lato", sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
     font-style: normal;
     color: #FFFFFF;
     margin-top: 32px;
-    text-transform: uppercase;
-      text-transform-padding: 0;
-      text-transform-margin-top: 38px; }
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .landing__main-title {
+        padding: 0;
+        margin-top: 38px; } }
   .landing__date {
     font-family: "Lato", sans-serif;
     font-size: 1.8rem;
@@ -139,7 +144,7 @@ body {
     margin-top: 14px; }
   .landing__subtitle {
     font-family: "Lato", sans-serif;
-    font-size: 4rem;
+    font-size: 3.6rem;
     font-weight: 600;
     font-style: normal;
     color: #DDA859;
@@ -171,6 +176,7 @@ body {
         .landing__form .form-group {
           margin: 0; } }
     .landing__form .btn-custom, .landing__form .form-group {
+      font-size: 1.2rem;
       flex-grow: 1; }
   .landing__form-disclaimer {
     margin-top: 13px;
@@ -180,6 +186,15 @@ body {
     font-style: normal;
     color: #FFFFFF;
     font-style: italic; }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .landing .landing__logo {
+      background-image: url("../img/lumos-logo-2x.png"); }
+    .landing .landing {
+      background-image: url("../img/landing-bg-mobile-2x.jpg"); } }
+  @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px) {
+    .landing .landing {
+      padding: 40px 0 135px;
+      background-image: url("../img/landing-bg-2x.jpg"); } }
 
 .description {
   margin-top: 70px; }
@@ -246,8 +261,13 @@ body {
 .sign-up {
   padding: 80px 0;
   background-image: url("../img/signup-bg.jpg");
+  background-color: #2b1431;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain;
+  background-position: bottom; }
+  @media (min-width: 1200px) {
+    .sign-up {
+      background-size: cover; } }
   .sign-up__text {
     font-family: "Lato", sans-serif;
     font-size: 2.4rem;
@@ -256,6 +276,10 @@ body {
     color: #DDA859;
     line-height: 29px;
     margin-bottom: 40px; }
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .sign-up {
+    background-image: url("../img/signup-bg-2x.jpg"); } }
 
 .schedule {
   background-color: #FFFFFF;
@@ -490,7 +514,11 @@ body {
   background-image: url("../img/footer-bg.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain;
+  background-color: #2b1431; }
+  @media (min-width: 1200px) {
+    .footer {
+      background-size: cover; } }
   @media (min-width: 992px) {
     .footer .container {
       padding-left: 0;
